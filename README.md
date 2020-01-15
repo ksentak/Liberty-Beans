@@ -5,11 +5,11 @@ https://young-forest-75020.herokuapp.com/
 
 ---
 
-![]()
+![Landing](./app-screenshots/CoffeeLanding.png)
 
 ---
 
-![]()
+![HomePage](./app-screenshots/CoffeeView.png)
 
 ---
 
