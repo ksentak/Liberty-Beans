@@ -19,9 +19,8 @@ module.exports = {
   },
   production: {
     // eslint-disable-next-line camelcase
-      // Database is JawsDB on Heroku
-      connection = mysql.createConnection(process.env.JAWSDB_URL), 
-      dialect: "mysql"
+    use_env_variable: "JAWSDB_URL",
+    dialect: "mysql"
   },
   
 };
