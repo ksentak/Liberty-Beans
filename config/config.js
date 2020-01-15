@@ -1,4 +1,6 @@
 require("dotenv").config();
+var mysql = require('mysql');
+
 module.exports = {
   development: {
     username: "root",
@@ -17,7 +19,9 @@ module.exports = {
   },
   production: {
     // eslint-disable-next-line camelcase
-    use_env_variable: "JAWSDB_URL",
-    dialect: "mysql"
-  }
+      // Database is JawsDB on Heroku
+      connection = mysql.createConnection(process.env.JAWSDB_URL), 
+      dialect: "mysql"
+  },
+  
 };
